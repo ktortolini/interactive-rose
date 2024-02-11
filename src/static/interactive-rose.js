@@ -142,7 +142,7 @@ function stem() {
 	 * see: {@link https://p5js.org/reference/#/p5/vertex}
 	 */
 
-	vertex(startingX, startingY);
+	vertex(random(startingX - 12.7101, startingX + 14.3483), random(startingY - 14.9217, startingY + 12.4502));
 
 	/**/
 
@@ -202,7 +202,7 @@ function leaf() {
 
 	/**/
 
-	vertex(startingX, startingY);
+	vertex(random(startingX - 13.4255, startingX + 15.7588), random(startingY - 12.3115, startingY + 17.3473));
 
 	/**/
 
@@ -255,7 +255,7 @@ function pedal() {
 
 	/**/
 
-	vertex(startingX, startingY);
+	vertex(random(startingX - 14.2325, startingX + 9.3754), random(startingY - 11.9348, startingY + 13.2660));
 
 	/**/
 
@@ -311,7 +311,7 @@ function heart() {
 
 	/**/
 
-	vertex(startingX, startingY);
+	vertex(random(startingX - 13.1295, startingX + 14.2444), random(startingY - 9.1246, startingY + 13.7397));
 
 	/**/
 
