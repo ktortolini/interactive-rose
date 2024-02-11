@@ -1,6 +1,6 @@
 export default ({ title, children }: Lume.Data, helpers: Lume.Helpers) => {
 	return (
-		<html>
+		<html data-theme="dark">
 			<head>
 				<meta charSet='utf-8' />
 				<meta
