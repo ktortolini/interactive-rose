@@ -359,7 +359,7 @@ function check() {
 	/**/
 
 	if (drawCount > 255) {
-		background(0, 0, 0, 0.1 + (drawCount / 255));
+		background(0, 0, 0, 0.3242 + (drawCount / 255));
 	}
 
 	/**/
