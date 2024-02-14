@@ -53,4 +53,3 @@ Yearning for more details on the _MACT_ degree program at Southern Methodist Uni
 ## 📜 _License_
 
 _Note_: Interactive Rose is licensed under the MIT License.
-

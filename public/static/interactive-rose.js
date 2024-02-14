@@ -392,7 +392,7 @@ function draw() {
 	 * see: {@link https://p5js.org/reference/#/p5/background}
 	 */
 
-	background(232, 232, 232, 0.1);
+	background(1, 1, 1, 0.1);
 
 	/**/
 
