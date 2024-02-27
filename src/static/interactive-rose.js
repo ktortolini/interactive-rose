@@ -380,6 +380,10 @@ function check() {
 
 // deno-lint-ignore no-unused-vars
 function draw() {
+	/**/
+
+	scale(0.75);
+
 	/**
 	 * This application uses p5.js and p5 noStroke() method,
 	 * see: {@link https://p5js.org/reference/#/p5/noStroke}
