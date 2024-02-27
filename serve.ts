@@ -7,4 +7,4 @@ const server = new Server({
 
 server.start();
 
-console.log('\u{2764}\u{FE0F} thank you for viewing...');
+console.log('🚀 ~ file: serve.ts:10 ~ server:', server);
