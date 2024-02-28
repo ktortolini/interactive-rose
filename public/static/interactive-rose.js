@@ -102,8 +102,25 @@ class CustomShape {
 
 // deno-lint-ignore no-unused-vars
 function mouseMoved() {
+	/**
+	 * This application uses p5.js and p5 random() method,
+	 * see: {@link https://p5js.org/reference/#/p5/random}
+	 */
+
 	randomDeviation = random(randomDeviation + 0.007, randomDeviation + 0.014);
+
+	/**
+	 * The variable below slightly changes the color of
+	 * the shape when the mouse is moved.
+	 */
+
 	color = random((color + 0.1), (color + 0.5));
+
+	/**
+	 * This application uses p5.js and p5 redraw() method,
+	 * see: {@link https://p5js.org/reference/#/p5/redraw}
+	 */
+
 	redraw();
 }
 
@@ -134,8 +151,8 @@ function stem() {
 
 	/**/
 
-	const startingX = 271.5459;
-	const startingY = 898.8915;
+	const startingX = 271.5459 + randomDeviation;
+	const startingY = 898.8915 + randomDeviation;
 
 	/**
 	 * This application uses p5.js and p5 vertex() method,
@@ -151,17 +168,10 @@ function stem() {
 		startingX,
 		startingY,
 		[
-			[-5.2153, 8.3487, -14.5928, 17.1786, -25.1635, 14.5597],
-			[-8.9269, -2.3363, -12.9872, -11.1798, -11.6771, -19.857],
-			[3.9501, -26.1614, 19.6352, -50.0156, 27.7097, -75.0979],
-			[15.0135, -46.637, 21.4032, -95.4902, 25.0498, -144.1903],
-			[3.6756, -49.0874, 7.6441, -98.8359, 7.6945, -148.1483],
-			[0.012, -11.7078, -0.277, -23.4181, -0.9705, -35.106],
-			[-0.6395, -10.7789, -3.8137, -23.1646, -1.0636, -33.7326],
-			[2.039, -7.8354, 10.5819, -17.031, 19.3748, -16.043],
-			[11.9354, 1.3411, 13.0325, 17.2375, 13.4907, 26.4142],
-			[6.4916, 122.565, -6.18, 247.5539, -34.9945, 366.7625],
-			[-5.0294, 21.0856, -7.3329, 45.7234, -19.4504, 64.4387],
+			[-8.3345, 19.3039, -40.3255, 20.3544, -36.9006, -5.3032],
+			[4.0006, -26.1968, 19.6006, -49.9968, 27.7006, -75.0968],
+			[33.2387, -116.5274, 33.0627, -241.1774, 30.6026, -361.0996],
+			[81.3791, -90.8256, 6.4697, 411.1166, -21.4026, 441.4996],
 		],
 	);
 
@@ -197,8 +207,8 @@ function leaf() {
 
 	/**/
 
-	const startingX = 286.4163;
-	const startingY = 443.8655;
+	const startingX = 286.4163 + randomDeviation;
+	const startingY = 443.8655 + randomDeviation;
 
 	/**/
 
@@ -250,8 +260,8 @@ function pedal() {
 
 	/**/
 
-	const startingX = 226.8094;
-	const startingY = 60.6707;
+	const startingX = 226.8094 + randomDeviation;
+	const startingY = 60.6707 + randomDeviation;
 
 	/**/
 
@@ -298,7 +308,7 @@ function heart() {
 	 * see: {@link https://p5js.org/reference/#/p5/fill}
 	 */
 
-	fill(random(196, 212), random(91, 110), random(91, 110), color);
+	fill(random(193, 215), random(91, 110), random(91, 110), color);
 
 	/**/
 
@@ -306,8 +316,8 @@ function heart() {
 
 	/**/
 
-	const startingX = 286.2428;
-	const startingY = 392.7408;
+	const startingX = 286.2428 + randomDeviation;
+	const startingY = 392.7408 + randomDeviation;
 
 	/**/
 
@@ -340,6 +350,11 @@ function heart() {
  */
 
 function check() {
+	/**
+	 * The {@link color} value is reset to 0 when
+	 * the value accumulates above the value of 2.
+	 */
+
 	if (color > 2) {
 		color = 0;
 	}
